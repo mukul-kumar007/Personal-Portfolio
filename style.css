@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+body{
+    background-color: #2c2f40;
+    overflow-x: hidden;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding: 20px 8%;
+    text-decoration: none;
+    background-color: #26293b;
+}
+.header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
+}
+.logo{
+    display: flex;
+    gap: 5px;
+}
+.logo span{
+    margin-top: 1px;
+}
+.logo a{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    cursor: default;
+}
+.logo i{
+    color: white;
+    margin-right: 10px;
+}
+.logo .material-symbols-outlined{
+    font-size: 2rem;
+    color: white;
+    
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 3.5rem;
+}
+.navbar a:hover,.navbar a.active{
+    color: aqua;
+}
+#menu{
+    color: white;
+    font-size: 2rem;
+    display: none;
+    /* margin-right: 4rem; */
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 8% 2rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.home-image{
+    position: relative;
+}
+#elements{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move 2s linear infinite;
+}
+@keyframes move{
+    0%
+    {
+        transform: translate(-20px,0px);
+    }
+    50%
+    {
+        transform: translate(0px,-20px);
+    }
+    100%
+    {
+        transform: translate(-20px,0px);
+    }
+}
+#iam{
+    color: aqua;
+}
+.homecontent{
+    color: white;
+}
+.homecontent h3{
+    color: aqua;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.homecontent p{
+    font-size: 1.5rem;
+    color: white;
+    margin: 15px 0;
+}
+.homecontent h1{
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: aqua;
+}
+.personal_links a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    font-size: 2rem;
+    color: aqua;
+    margin-right: 25px;
+    margin-top: 10px;
+    transition: all 0.3s linear;
+    border: none;
+}
+.personal_links a:hover{
+    color: white;
+    box-shadow: 1px 1px 1rem aqua;
+}
+.about_image img{
+    background: transparent;
+    border-radius: 50%;
+}
+
+
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+#about_heading{
+    color: white;
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+#about_h2{
+    color: aqua;
+}
+.about_content p{
+    color: white;
+    font-size: 30px;
+}
+.about_content h3{
+    color: white;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-size: 600;
+    line-height: 3.5rem;
+}
+.read
+{
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    line-height: 5rem;
+    background-color: rgb(6, 172, 172);
+    color: white;
+    font-weight: 500;
+}
+#read:hover{
+    color: rgb(62, 107, 231);
+    background-color: rgb(27, 188, 216);
+    box-shadow: 1px 1px 30px aqua;
+}
+.skills p{
+    margin-bottom: 8rem;
+}
+.skills p,h2{
+    text-align: center;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.skill_container .skill_box{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.skill_box i{
+    font-size: 50px;
+}
+.fa-brands,.fa-solid{
+    color: aqua;
+}
+.skills h2{
+    color: white;
+    font-size: 3rem;
+}
+.skills p{
+    color: white;
+    font-size: 22px;
+}
+.skillresume{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   gap: 80px;
+}
+.skills input{
+    margin-top: -40px;
+}
+.project_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.cardsbox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+}
+.project_box{
+    width: 400px;
+    height: 500px;
+    background-color: #0f3460;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 30px;
+}
+.projectimage img{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+}
+.projectheading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.project h2{
+    font-size: 2rem;
+    color: white;
+}
+.projectheading h2{
+    color: #fffffffa;
+}
+.projectheading p{
+    font-size: 1.2rem;
+    color: #ffffff80;
+}
+.projectheading input{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #0f3460;
+    border: 2px solid antiquewhite;
+    color: antiquewhite;
+    transition: all 0.3s linear;
+}
+.projectheading input:hover{
+    transform: scale(1.2);
+    border: 2px solid red;
+    color: red;
+}
+#proj{
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+.contact h2{
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: white;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 16px auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input_box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input_box input,.contact form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 15px;
+    margin: .7rem 0;
+    background-color: white;
+    border: none;
+}
+.contact form .input_box input{
+    width: 49%;
+}
+.btn{
+    margin-top: 2rem;
+    background-color: rgb(227, 227, 227);
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+    color: rgb(4, 30, 160);
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 1px 1px 30px rgb(3, 153, 153);
+    background-color: aliceblue;
+    color: rgb(1, 143, 143);
+}
+.footer_text{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    background-color: #26293b;
+    padding: 10px 4px;
+}
+
+
+/* Responsive Code */
+
+
+
+@media (max-width : 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width : 991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    .section{
+        padding: 5rem 3% 2rem;
+    }
+    .footer{
+        padding: 3% 2rem;
+    }
+    .contact{
+        min-height: auto;
+    }
+    .skills{
+        min-height: auto;
+    }
+}
+@media (max-width : 858px)
+{
+    #menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: rgb(37, 46, 55);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .homecontent h3{
+        font-size: 2.6rem;
+    }
+    .homecontent h1{
+        font-size: 5rem;
+    }
+    .homecontent p{
+        font-size: 1.8rem;
+    }
+    .home-image img{
+        width: 70vw;
+        height: 70vw;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about_image img{
+        width: 60vw;
+        height: 60vw;
+        margin-top: 4rem;
+    }
+    /* .project_box img{
+        width: 45vw;
+        height: 45vw;
+    } */
+    .skill_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .project_box{
+        width: 260px;
+        height: 404px;
+    }
+    .projectimage img{
+        width: 220px;
+        height: 220px;
+    }
+    .projectheading p{
+        font-size: 12px;
+    }
+    
+}
+@media (max-width:650px){
+    .project_container{
+        grid-template-columns: 1fr;
+    }
+    .contact form .input_box input{
+        width: 100%;
+    }
+    .cardsbox{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
